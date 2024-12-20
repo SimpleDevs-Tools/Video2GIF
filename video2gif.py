@@ -43,7 +43,7 @@ parser.add_argument('end',
 parser.add_argument('-fps', '--frames_per_second',
                     help='The FPS of the output GIF. Can be used to speed up runtime operation',
                     type=int,
-                    default=0)
+                    default=15)
 parser.add_argument('-w', '--width',
                     help='The width of the output GIF. The height will be auto-calculated to match the output resolution',
                     type=int,
