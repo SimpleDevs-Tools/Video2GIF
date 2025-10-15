@@ -1,6 +1,7 @@
 **/.DS_Store
 **/*.mp4
 **/*.gif
+**/*.mov
 
 # Exceptions: EX the sample file
 !samples/sample.mp4

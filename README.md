@@ -34,8 +34,9 @@ The arguments that can be passed are as follows:
 |`src`|`true`|string|The video source file.||
 |`start`|`true`|float|The start timestamp (in seconds) that we want to clip from.||
 |`end`|`true`|float|The end timestamp (in seconds) that we want to clip from.||
-|`-fps`, `--frames_per_second`|`false`|int|The FPS of the output GIF. If left alone to defualt (`0`), then the GIF will output at the same FPS as the input video. Note that a higher FPS will increase processing time.|`0`|
-|`-w`, `--width`|`false`|int|The width of the output GIF. The height will be auto-calculated to match the output resolution. By default (`0`), the outputted GIF will match the original video width.|`0`|
+|`-fps`, `--frames_per_second`|`false`|int|The FPS of the output GIF. If left alone to defualt (`10`), then the GIF will output at the same FPS as the input video. Note that a higher FPS will increase processing time.|`10`|
+|`-w`, `--width`|`false`|int|The width of the output GIF. The height will be auto-calculated to match the output resolution. By default (`0`), the outputted GIF will match the original video width.|`480`|
+|`-q`, `--quality`|`false`|int|The quality of the output, from 0.1 to 100 (100 = original quality). Use to reduce the filesize if necessary.|`85`|
 
 An example is provided in `./samples/sample.mp4`, which is a 1024x1024 video @ 30 FPS that is 55 seconds long. The command below will produce a GIF that is 512x512px at 15 FPS, from 00:10 to 00:20.
 
